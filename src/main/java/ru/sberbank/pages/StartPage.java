@@ -60,7 +60,6 @@ public class StartPage extends BasePage {
      */
     public MortgagesSecondaryHousingPage selectSubMenu(String nameSubMenu) {
         for (WebElement menuItem : listSubMenu) {
-            wait.until(ExpectedConditions.visibilityOf(menuItem));
             if (menuItem.getText().equalsIgnoreCase(nameSubMenu)) {
                 waitUtilElementToBeClickable(menuItem).click();
                 return pageManager.getMortgagesSecondaryHousingPage();
