@@ -1,4 +1,4 @@
-package sberbank.utils;
+package ru.sberbank.utils;
 
 /**
  * Класс констант для удобного доступа к значениям в файле application.properties

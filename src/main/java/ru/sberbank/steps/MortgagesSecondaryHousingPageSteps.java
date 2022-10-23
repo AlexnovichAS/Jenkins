@@ -1,4 +1,4 @@
-package sberbank.steps;
+package ru.sberbank.steps;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.ru.И;

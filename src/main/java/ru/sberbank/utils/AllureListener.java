@@ -1,4 +1,4 @@
-package sberbank.utils;
+package ru.sberbank.utils;
 
 import io.cucumber.plugin.event.EventPublisher;
 import io.cucumber.plugin.event.TestStepFinished;
@@ -11,7 +11,7 @@ import ru.sberbank.managers.DriverManager;
 import static io.cucumber.plugin.event.Status.FAILED;
 
 public class AllureListener extends AllureCucumber5Jvm {
-
+/*
     public static byte[] getScreenshot() {
         return ((TakesScreenshot) DriverManager.getDriverManager().getDriver()).getScreenshotAs(OutputType.BYTES);
     }
@@ -23,5 +23,5 @@ public class AllureListener extends AllureCucumber5Jvm {
             }
         });
         super.setEventPublisher(publisher);
-    }
+    }*/
 }

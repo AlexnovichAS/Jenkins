@@ -1,4 +1,4 @@
-package sberbank.managers;
+package ru.sberbank.managers;
 
 import org.apache.commons.exec.OS;
 import org.junit.Assert;

@@ -1,4 +1,4 @@
-package sberbank.pages;
+package ru.sberbank.pages;
 
 //import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.*;

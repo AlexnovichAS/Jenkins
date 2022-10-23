@@ -1,4 +1,4 @@
-package sberbank.managers;
+package ru.sberbank.managers;
 
 
 import ru.sberbank.pages.BasePage;

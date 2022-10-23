@@ -1,4 +1,4 @@
-package sberbank.steps;
+package ru.sberbank.steps;
 
 import io.cucumber.java.ru.И;
 import ru.sberbank.managers.PageManager;

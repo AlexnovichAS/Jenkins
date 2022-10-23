@@ -1,4 +1,4 @@
-package sberbank.managers;
+package ru.sberbank.managers;
 
 import java.util.concurrent.TimeUnit;
 

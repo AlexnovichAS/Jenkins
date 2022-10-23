@@ -1,4 +1,4 @@
-package sberbank.pages;
+package ru.sberbank.pages;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -77,7 +77,7 @@ public class MortgagesSecondaryHousingPage extends BasePage {
                 return this;
             }
         }
-//        Assertions.fail("Поле с наименованием '" + nameField + "' отсутствует на странице" + "'Ипотека на вторичное жильё от'");
+        Assert.fail("Поле с наименованием '" + nameField + "' отсутствует на странице" + "'Ипотека на вторичное жильё от'");
         return this;
     }
 
@@ -120,13 +120,13 @@ public class MortgagesSecondaryHousingPage extends BasePage {
                 }
                 break;
             default:
-//                Assertions.fail("Чекбокс с наименованием '" + nameCheckbox + "' отсутствует на странице " +
-//                        "'Ипотека на вторичное жильё от'");
+                Assert.fail("Чекбокс с наименованием '" + nameCheckbox + "' отсутствует на странице " +
+                        "'Ипотека на вторичное жильё от'");
 
         }
         element = element.findElement(By.xpath("./../..//input"));
-//        Assertions.assertEquals(value, element.getAttribute("aria-checked"),
-//                "Проверка чекбокса '" + nameCheckbox + "' была не пройдена");
+        Assert.assertEquals(value, element.getAttribute("aria-checked"),
+                "Проверка чекбокса '" + nameCheckbox + "' была не пройдена");
         return this;
     }
 
@@ -168,12 +168,12 @@ public class MortgagesSecondaryHousingPage extends BasePage {
                 waitUtilElementToBeVisible(element);
                 break;
             default:
-//                Assertions.fail("Поле с наименованием '" + nameField + "' отсутствует на странице " +
-//                        "'Ипотека на вторичное жильё от'");
+                Assert.fail("Поле с наименованием '" + nameField + "' отсутствует на странице " +
+                        "'Ипотека на вторичное жильё от'");
 
         }
-//        Assertions.assertEquals(value, getResultReplaceAndTrim(element),
-//                "Проверка значения поля: '" + nameField + "' не пройдена");
+        Assert.assertEquals(value, getResultReplaceAndTrim(element),
+                "Проверка значения поля: '" + nameField + "' не пройдена");
         return this;
     }
 }
