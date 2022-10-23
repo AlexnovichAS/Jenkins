@@ -3,7 +3,6 @@ def mvn = "/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven_3.8
 pipeline {
     agent any
     parameters {
-        string(name: 'BRANCH', defaultValue: 'main', description: '')
         string(name: 'TAG', defaultValue: '@firstTest', description: '')
     }
     stages {
