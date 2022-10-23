@@ -40,6 +40,7 @@ public class StartPage extends BasePage {
      */
     public StartPage selectBaseMenu(String nameBaseMenu) {
         for (WebElement menuItem : listBaseMenu) {
+            wait.until(ExpectedConditions.visibilityOf(menuItem));
             if (menuItem.getText().contains(nameBaseMenu)) {
                 waitUtilElementToBeClickable(menuItem).click();
                 WebElement element = menuItem.findElement(By.xpath("./a"));
@@ -59,6 +60,7 @@ public class StartPage extends BasePage {
      */
     public MortgagesSecondaryHousingPage selectSubMenu(String nameSubMenu) {
         for (WebElement menuItem : listSubMenu) {
+            wait.until(ExpectedConditions.visibilityOf(menuItem));
             if (menuItem.getText().equalsIgnoreCase(nameSubMenu)) {
                 waitUtilElementToBeClickable(menuItem).click();
                 return pageManager.getMortgagesSecondaryHousingPage();
