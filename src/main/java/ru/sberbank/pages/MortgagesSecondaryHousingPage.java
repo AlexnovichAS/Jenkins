@@ -125,8 +125,8 @@ public class MortgagesSecondaryHousingPage extends BasePage {
 
         }
         element = element.findElement(By.xpath("./../..//input"));
-        Assert.assertEquals(value, element.getAttribute("aria-checked"),
-                "Проверка чекбокса '" + nameCheckbox + "' была не пройдена");
+        Assert.assertEquals("Проверка чекбокса '" + nameCheckbox + "' была не пройдена",
+                value, element.getAttribute("aria-checked"));
         return this;
     }
 
@@ -172,8 +172,8 @@ public class MortgagesSecondaryHousingPage extends BasePage {
                         "'Ипотека на вторичное жильё от'");
 
         }
-        Assert.assertEquals(value, getResultReplaceAndTrim(element),
-                "Проверка значения поля: '" + nameField + "' не пройдена");
+        Assert.assertEquals("Проверка значения поля: '" + nameField + "' не пройдена",
+                value, getResultReplaceAndTrim(element));
         return this;
     }
 }

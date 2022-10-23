@@ -37,20 +37,6 @@
             <version>${selenium-java.version}</version>
         </dependency>
 
-      <!--  &lt;!&ndash; https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter &ndash;&gt;
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>${junit.jupiter.version}</version>
-        </dependency>-->
-
-     <!--   &lt;!&ndash; https://mvnrepository.com/artifact/org.junit.platform/junit-platform-runner &ndash;&gt;
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-launcher</artifactId>
-            <version>${junit-platform-launcher.version}</version>
-        </dependency>-->
-
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -124,15 +110,6 @@
                     <resultsDirectory>${project.build.directory}/reports/allure-results</resultsDirectory>
                     <reportDirectory>${project.build.directory}/reports/allure-reports</reportDirectory>
                 </configuration>
-                <executions>
-<!--                    <execution>-->
-<!--                        <id>allure-plugin</id>-->
-<!--                        <phase>install</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>report</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-                </executions>
             </plugin>
         </plugins>
     </build>

@@ -1,6 +1,7 @@
 package ru.sberbank.pages;
 
 //import org.junit.jupiter.api.Assertions;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -47,7 +48,7 @@ public class StartPage extends BasePage {
                 return this;
             }
         }
-//        Assertions.fail("Меню '" + nameBaseMenu + "' не было найдено на стартовой странице!");
+        Assert.fail("Меню '" + nameBaseMenu + "' не было найдено на стартовой странице!");
         return this;
     }
 
@@ -64,7 +65,7 @@ public class StartPage extends BasePage {
                 return pageManager.getMortgagesSecondaryHousingPage();
             }
         }
-//        Assertions.fail("Подменю '" + nameSubMenu + "' не было найдено на стартовой странице!");
+        Assert.fail("Подменю '" + nameSubMenu + "' не было найдено на стартовой странице!");
         return pageManager.getMortgagesSecondaryHousingPage();
     }
 }
